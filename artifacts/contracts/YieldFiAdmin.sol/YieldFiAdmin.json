@@ -1,0 +1,264 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "YieldFiAdmin",
+  "sourceName": "contracts/YieldFiAdmin.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_ethOracle",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_wbtcOracle",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "reserve",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "collateralFactor",
+          "type": "uint256"
+        }
+      ],
+      "name": "CollateralFactorUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "reserve",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "liquidationThreshold",
+          "type": "uint256"
+        }
+      ],
+      "name": "LiquidationThresholdUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "reserve",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "oracle",
+          "type": "address"
+        }
+      ],
+      "name": "OracleUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "reserve",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "reserveFactor",
+          "type": "uint256"
+        }
+      ],
+      "name": "ReserveFactorUpdated",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "WAD",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "collateralFactors",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "liquidationThresholds",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "priceOracles",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "reserveFactors",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_reserve",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_collateralFactor",
+          "type": "uint256"
+        }
+      ],
+      "name": "setCollateralFactor",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_reserve",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_liquidationThreshold",
+          "type": "uint256"
+        }
+      ],
+      "name": "setLiquidationThreshold",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_reserve",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_oracle",
+          "type": "address"
+        }
+      ],
+      "name": "setOracle",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_reserve",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_reserveFactor",
+          "type": "uint256"
+        }
+      ],
+      "name": "setReserveFactor",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161063438038061063483398101604081905261002f916100d5565b60036020527fec3d9d28a6dfaaf6fd659465e4dcac30fdca01a34ae4699904795406ba69e39180546001600160a01b039384166001600160a01b031991821617909155712260fac5e5542a773aa44fbcfedf7c11c5996000527f3b23d1e7231764f8e4e3b0ecf143eb6e167230174d88947c9df7f52af2937d0a8054929093169116179055610108565b80516001600160a01b03811681146100d057600080fd5b919050565b600080604083850312156100e857600080fd5b6100f1836100b9565b91506100ff602084016100b9565b90509250929050565b61051d806101176000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c80635c38eb3a116100665780635c38eb3a146101345780636a1460241461014757806378327438146101565780637d0e16bb14610176578063c04f31ff1461019657600080fd5b806301374518146100985780630e30428d146100de5780634b4e6753146100f3578063572d988814610106575b600080fd5b6100c16100a6366004610468565b6003602052600090815260409020546001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b6100f16100ec36600461048a565b6101a9565b005b6100f161010136600461048a565b61027d565b610126610114366004610468565b60006020819052908152604090205481565b6040519081526020016100d5565b6100f16101423660046104b4565b610339565b610126670de0b6b3a764000081565b610126610164366004610468565b60016020526000908152604090205481565b610126610184366004610468565b60026020526000908152604090205481565b6100f16101a436600461048a565b610390565b670de0b6b3a76400008111156102245760405162461bcd60e51b815260206004820152603560248201527f4c69717569646174696f6e207468726573686f6c64206d757374206265206c656044820152747373207468616e206f7220657175616c20746f203160581b60648201526084015b60405180910390fd5b6001600160a01b03821660008181526001602052604090819020839055517f6878ed75c44e443b25c5b254964ed8a88f572e4cc8761951cbe3810ba19e2825906102719084815260200190565b60405180910390a25050565b670de0b6b3a76400008111156102ec5760405162461bcd60e51b815260206004820152602e60248201527f5265736572766520666163746f72206d757374206265206c657373207468616e60448201526d206f7220657175616c20746f203160901b606482015260840161021b565b6001600160a01b03821660008181526002602052604090819020839055517fa9e6d8c6a7ceab34e1bbc36191cd138bd9190f9e9e04482afb77cecc652720b6906102719084815260200190565b6001600160a01b0382811660008181526003602052604080822080546001600160a01b0319169486169485179055517f078c3b417dadf69374a59793b829c52001247130433427049317bde56607b1b79190a35050565b670de0b6b3a76400008111156104025760405162461bcd60e51b815260206004820152603160248201527f436f6c6c61746572616c20666163746f72206d757374206265206c657373207460448201527068616e206f7220657175616c20746f203160781b606482015260840161021b565b6001600160a01b0382166000818152602081815260409182902084905590518381527f275d6207ccd4271a12c584febf2bcf32254205dfb4639ce1a9184d2e2609e2d09101610271565b80356001600160a01b038116811461046357600080fd5b919050565b60006020828403121561047a57600080fd5b6104838261044c565b9392505050565b6000806040838503121561049d57600080fd5b6104a68361044c565b946020939093013593505050565b600080604083850312156104c757600080fd5b6104d08361044c565b91506104de6020840161044c565b9050925092905056fea264697066735822122093153ebc2f0fa54d8067c89468be51a24d18125e993864ddf9d59bb90ecd0a6c64736f6c634300080c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100935760003560e01c80635c38eb3a116100665780635c38eb3a146101345780636a1460241461014757806378327438146101565780637d0e16bb14610176578063c04f31ff1461019657600080fd5b806301374518146100985780630e30428d146100de5780634b4e6753146100f3578063572d988814610106575b600080fd5b6100c16100a6366004610468565b6003602052600090815260409020546001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b6100f16100ec36600461048a565b6101a9565b005b6100f161010136600461048a565b61027d565b610126610114366004610468565b60006020819052908152604090205481565b6040519081526020016100d5565b6100f16101423660046104b4565b610339565b610126670de0b6b3a764000081565b610126610164366004610468565b60016020526000908152604090205481565b610126610184366004610468565b60026020526000908152604090205481565b6100f16101a436600461048a565b610390565b670de0b6b3a76400008111156102245760405162461bcd60e51b815260206004820152603560248201527f4c69717569646174696f6e207468726573686f6c64206d757374206265206c656044820152747373207468616e206f7220657175616c20746f203160581b60648201526084015b60405180910390fd5b6001600160a01b03821660008181526001602052604090819020839055517f6878ed75c44e443b25c5b254964ed8a88f572e4cc8761951cbe3810ba19e2825906102719084815260200190565b60405180910390a25050565b670de0b6b3a76400008111156102ec5760405162461bcd60e51b815260206004820152602e60248201527f5265736572766520666163746f72206d757374206265206c657373207468616e60448201526d206f7220657175616c20746f203160901b606482015260840161021b565b6001600160a01b03821660008181526002602052604090819020839055517fa9e6d8c6a7ceab34e1bbc36191cd138bd9190f9e9e04482afb77cecc652720b6906102719084815260200190565b6001600160a01b0382811660008181526003602052604080822080546001600160a01b0319169486169485179055517f078c3b417dadf69374a59793b829c52001247130433427049317bde56607b1b79190a35050565b670de0b6b3a76400008111156104025760405162461bcd60e51b815260206004820152603160248201527f436f6c6c61746572616c20666163746f72206d757374206265206c657373207460448201527068616e206f7220657175616c20746f203160781b606482015260840161021b565b6001600160a01b0382166000818152602081815260409182902084905590518381527f275d6207ccd4271a12c584febf2bcf32254205dfb4639ce1a9184d2e2609e2d09101610271565b80356001600160a01b038116811461046357600080fd5b919050565b60006020828403121561047a57600080fd5b6104838261044c565b9392505050565b6000806040838503121561049d57600080fd5b6104a68361044c565b946020939093013593505050565b600080604083850312156104c757600080fd5b6104d08361044c565b91506104de6020840161044c565b9050925092905056fea264697066735822122093153ebc2f0fa54d8067c89468be51a24d18125e993864ddf9d59bb90ecd0a6c64736f6c634300080c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
