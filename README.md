@@ -16,20 +16,35 @@ npx hardhat compile
 npx hardhat run scripts/deploy.js --network sepolia
 
 DataType deployed to: 0xf7f1C1b5F28a5190a21F12a5a3235141afE5767C
+
 MathErrors deployed to: 0x105315dECc761c6D1Cc8b263fe065D089D7BFeFC
+
 SafeMath deployed to: 0x9AF6035C3d31B234757F93e4dFffc4D00CAF5039
+
 Address deployed to: 0x7DdC999321979B19C426D08e1e4178B02024611F
+
 WadRayMath deployed to: 0xB9a3ccf576C6d9319a4138e964C7239116C25D78
+
 PercentageMath deployed to: 0xBd9E3166edf2eE9e0ba99dED595c5b402eDc6fE7
+
 MathUtils deployed to: 0xE04803dAAB2369e615DB900379305C6d64a077a3
+
 SafeERC20 deployed to: 0x6b4d852e9F3A009b4728631800d4401527C500A3
+
 AToken deployed to: 0x962b6aD55f41F04Af6E60C46F21a1A067679BF63
+
 DebtToken deployed to: 0x01d73159D902A29611385E91FE5291a1B0D1bFb1
+
 YieldFiAdmin deployed to: 0xB441Cf957216D0B7EbE84785d0C76CA3B78fA013
+
 YieldFiFlashLoan deployed to: 0xfBf527eA15D3FC78759123A9AB61C2a372631c54
+
 YieldFiCollateral deployed to: 0xc541a746cc38D08922D2c4a9b4104018b433D8ed
+
 YieldFiCalculations deployed to: 0xb8b0550680BF6E4B319F0E96ea48dc6355cD1F74
+
 YieldFiCore deployed to: 0x0834891B4762A77d679cAA4498aF359E8Dab08F0
+
 Deployment completed successfully.
 
 npm install ethers
